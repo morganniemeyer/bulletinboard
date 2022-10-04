@@ -27,6 +27,7 @@ form button {
     width: 100%;
     font-size: 1.15em;
     padding: 5px;
+    border-radius: 5px;
 }
 
 form input,
@@ -54,9 +55,10 @@ form button {
     margin-top: 10px;
     height: 45px;
     background: var(--action-color);
-    border: 0;
+    border: 3px solid #00838f;
     font-weight: bold;
     color: white;
+    border-radius: 8px;
 }
 
 form button:disabled {

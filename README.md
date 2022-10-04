@@ -68,3 +68,9 @@ form listener on new post page
 -preview image option
 
 signin/out/up - already built
+
+
+
+
+## Crediting
+<a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a>
