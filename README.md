@@ -51,7 +51,20 @@ form box
 -add an image
 -post button
 
+## functions
+
+uploadImage
+renderPost
+dispPosts
+createPost
+getPosts
+
 ## event listeners
 
 page load
 -dispPosts
+
+form listener on new post page
+-preview image option
+
+signin/out/up - already built
