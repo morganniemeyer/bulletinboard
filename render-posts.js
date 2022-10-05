@@ -12,7 +12,7 @@ export function renderPost(post) {
     h3.textContent = post.contact;
 
     const img = document.createElement('img');
-    img.src = post.img_url;
+    img.src = post.image_url;
 
     const pcat = document.createElement('p');
     pcat.textContent = post.category;
