@@ -48,3 +48,7 @@ export async function uploadImage(bucketName, imagePath, imageFile) {
 export async function createRow(post) {
     return await client.from('board').insert(post);
 }
+
+export async function getPosts() {
+    return await client.from('board').select('*');
+}
