@@ -1,11 +1,11 @@
 :root {
-    --background: rgb(224, 234, 247);
+    --background: #ffd6ff;
     --header-background: white;
-    --text-color: rgb(7, 5, 68);
-    --label-color: rgb(75, 102, 98);
+    --text-color: #09003d;
+    --label-color: #745cff;
     --placeholder-color: rgb(136, 136, 153);
-    --offset-color: rgb(217, 236, 217);
-    --action-color: rgb(77, 132, 252);
+    --offset-color: #bdb2ff;
+    --action-color: #9bf6ff;
 
     --primary-font: 'Rubik', Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans',
         'DejaVu Sans', 'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
@@ -68,4 +68,26 @@ main {
 
 .hidden {
     display: none;
+}
+.preview {
+    width: 100px;
+}
+.post {
+    background: var(--offset-color);
+    width: 400px;
+    padding: 20px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.post img {
+    width: 150px;
+    display: flex;
+    float: right;
+}
+
+.post-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
 }

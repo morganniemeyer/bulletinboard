@@ -24,3 +24,53 @@ Additional considerations:
     -   What needs to live in a persistence layer?
 -   Is there some state we need to initialize?
 -   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+
+[wireframe](wired.jpg)
+
+## html req
+
+sign in page:
+
+this is pre-built, will just require css updates
+
+bulletin page:
+
+add link add a post to header
+li item for each post containing:
+-h2 post title
+-p body text
+-h3 contact info, can be empty
+-p category, undecided if text or emoji
+-optional img
+
+add a new post page:
+form box
+-text input for title
+-text area for body of post
+-dropdown for categories
+-add an image
+-post button
+
+## functions
+
+uploadImage
+renderPost
+dispPosts
+createPost
+getPosts
+
+## event listeners
+
+page load
+-dispPosts
+
+form listener on new post page
+-preview image option
+
+signin/out/up - already built
+
+
+
+
+## Crediting
+<a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a>

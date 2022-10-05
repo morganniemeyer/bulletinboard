@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <!-- title and favicon -->
+        <title>Make A New Post</title>
+        <link rel="icon" type="image/x-icon" href="/assets/alchemy-favicon.png" />
+
+        <!-- js -->
+        <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+        <script type="module" src="post.js"></script>
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap"
+        />
+
+        <!-- css -->
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <link rel="stylesheet" href="../styles/global.css" />
+
+        <!-- add link for page specific css -->
+        <link rel="stylesheet" href="../styles/form.css" />
+    </head>
+
+    <body>
+        <header class="page-header">
+            <img class="logo" src="/assets/html_css_js.png" alt="logo" />
+            <p class="title">Make A New Post</p>
+            <nav>
+                <a href="../">Home</a>
+                <a href="">Add a Post</a>
+                <a id="sign-out-link" href="../auth/index.html">Sign Out</a>
+            </nav>
+        </header>
+
+        <main>
+            <form id="post-form">
+                <input type="text" name="title" id="post-title" required placeholder="Post Title" />
+                <textarea
+                    name="post-text"
+                    id="post-text"
+                    cols="30"
+                    rows="15"
+                    required
+                    placeholder="Post Text"
+                ></textarea>
+                <select name="post-type" id="type-select" required>
+                    <option value="pick" disabled selected>❔Pick a Type❓</option>
+                    <option value="⏰time-sensitive⏰">⏰time-sensitive⏰</option>
+                    <option value="🤬venting🤬">🤬venting🤬</option>
+                    <option value="🎉excitement🎉">🎉excitement🎉</option>
+                    <option value="💲sales💲">💲sales💲</option>
+                    <option value="🐈pets🐕‍🦺">🐈pets🐕‍🦺</option>
+                </select>
+                <input
+                    type="text"
+                    name="contact"
+                    id="contact"
+                    placeholder="Contact Info (optional)"
+                />
+                <input type="file" name="image" id="image-upload" />
+                <img id="preview" class="preview" alt="image preview" src="../assets/html.png" />
+                <button>Post</button>
+                <p id="error"></p>
+            </form>
+        </main>
+    </body>
+</html>
