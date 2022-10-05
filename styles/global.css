@@ -51,9 +51,6 @@ body {
 
 main {
     padding: 20px;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .avatar {
@@ -88,5 +85,9 @@ main {
     display: flex;
     float: right;
 }
-.type {
+
+.post-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
 }

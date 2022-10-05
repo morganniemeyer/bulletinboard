@@ -45,6 +45,7 @@
             <form id="post-form">
                 <input type="text" name="title" id="post-title" required placeholder="Post Title" />
                 <textarea
+                    name="post-text"
                     id="post-text"
                     cols="30"
                     rows="15"
@@ -68,6 +69,7 @@
                 <input type="file" name="image" id="image-upload" />
                 <img id="preview" class="preview" alt="image preview" src="../assets/html.png" />
                 <button>Post</button>
+                <p id="error"></p>
             </form>
         </main>
     </body>
